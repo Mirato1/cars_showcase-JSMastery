@@ -1,10 +1,9 @@
 import { CarProps, FilterProps } from '@/types';
 
-const url = 'https://cars-by-api-ninjas.p.rapidapi.com/v1/cars?model=corolla';
 const options = {
 	method: 'GET',
 	headers: {
-		'X-RapidAPI-Key': '2b963bc689msh9bbba63c01563f2p1569f5jsn704ffb561f62',
+		'X-RapidAPI-Key': process.env.NEXT_PUBLIC_RAPID_API_KEY || '',
 		'X-RapidAPI-Host': 'cars-by-api-ninjas.p.rapidapi.com',
 	},
 };
